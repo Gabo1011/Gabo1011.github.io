@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar Pedido - DHL</title>
+  <link href="registrar_pedido.css" rel="stylesheet">
+
+</head>
+<body>
+  <img src="DHL.jpeg" class="banner" alt="DHL Banner">
+  <div class="header">Registro de Pedidos - DHL Express</div>
+  <div class="container">
+
+    <div class="nav">
+      <span id="user-name"></span>
+      <a href="index.html">Inicio</a>
+      <a href="servicios_dhl.html">Servicios</a>
+      <a href="registrar_pedido.html">Registrar Pedidos</a>
+      <a href="Contacto.html">Contacto</a>
+      <a href="Preguntas.html">Preguntas Frecuentes</a>
+    </div>
+
+    <form>
+      <div class="form-group">
+        <label for="nombre">Nombre del Remitente</label>
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+      </div>
+      
+      <div class="form-group">
+        <label for="direccion">Dirección de Envío</label>
+        <input type="text" id="direccion" placeholder="Ingresa la dirección">
+      </div>
+
+      <div class="form-group">
+        <label for="destino">Destino</label>
+        <select id="destino">
+          <option value="">Selecciona un destino</option>
+          <option value="CDMX">CDMX</option>
+          <option value="Guadalajara">Guadalajara</option>
+          <option value="Monterrey">Monterrey</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="paquete">Descripción del Paquete</label>
+        <input type="text" id="paquete" placeholder="Ej. Documentos, Ropa, Electrónicos">
+      </div>
+
+      <button type="submit" class="submit-button">Registrar Pedido</button>
+    </form>
+  </div>
+
+  <button id="botonRegresar" onclick="regresarPagina()">⬅️ Regresar</button>
+
+  <script>
+      function regresarPagina() {
+        // Cambia esta URL a donde quieras que regrese
+        window.location.href = "index.html";
+      }
+  </script>
+
+  <div class="footer">&copy; 2024 DHL Express. Todos los derechos reservados.</div>
+</body>
+</html>
