@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FFCC00;
+    color: #000;
+}
+
+.banner {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    background: #D40511;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+.faq-item {
+    background: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+.faq-item:hover {
+    transform: scale(1.05);
+    background: #ffe066;
+}
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    color: #D40511;
+}
+.faq-answer {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.footer {
+    background: #D40511;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+
+#botonRegresar {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  #botonRegresar:hover {
+    background-color: #155ab6;
+    transform: scale(1.05);
+  }
+
+  .nav {
+    display: flex;
+    background-color: #D40511;
+    padding: 10px;
+    border-radius: 8px;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav a, .nav span {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav a:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+@media only screen and (max-width : 700px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+      }
+}

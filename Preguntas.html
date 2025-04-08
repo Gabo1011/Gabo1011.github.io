@@ -1,0 +1,63 @@
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preguntas Frecuentes - DHL</title>
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <link href="Preguntas.css" rel="stylesheet">
+    </head>
+    <body>
+        <img src="DHL.jpeg" class="banner" alt="DHL Banner">
+        <div class="header">Preguntas Frecuentes - DHL</div>
+        <div class="container">
+
+            <div class="nav">
+                <span id="user-name"></span>
+                <a href="index.html">Inicio</a>
+                <a href="servicios_dhl.html">Servicios</a>
+                <a href="registrar_pedido.html">Registrar Pedidos</a>
+                <a href="Contacto.html">Contacto</a>
+                <a href="Preguntas.html">Preguntas Frecuentes</a>
+            </div>
+
+            <div class="faq-item" onclick="toggleAnswer(0)">
+                <div class="faq-question">¿Cómo rastreo mi paquete?</div>
+                <div class="faq-answer">Puedes rastrear tu paquete ingresando tu número de seguimiento en nuestro portal web.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(1)">
+                <div class="faq-question">¿Cuánto tarda en llegar un envío?</div>
+                <div class="faq-answer">El tiempo de entrega depende del servicio seleccionado y la ubicación del destinatario.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(2)">
+                <div class="faq-question">¿Cómo puedo cambiar la dirección de entrega?</div>
+                <div class="faq-answer">Para cambiar la dirección de entrega, comunícate con nuestro servicio al cliente lo antes posible.</div>
+            </div>
+            <div class="faq-item" onclick="toggleAnswer(3)">
+                <div class="faq-question">¿Qué artículos están prohibidos para envíos?</div>
+                <div class="faq-answer">Artículos peligrosos como explosivos, líquidos inflamables y sustancias ilegales no pueden ser enviados.</div>
+            </div>
+        </div>
+
+        <button id="botonRegresar" onclick="regresarPagina()">⬅️ Regresar</button>
+
+        <div class="footer">&copy; 2024 DHL Express. Todos los derechos reservados.</div>
+
+        <script>
+            function toggleAnswer(index) {
+                var answers = document.querySelectorAll(".faq-answer");
+                if (answers[index].style.display === "none" || answers[index].style.display === "") {
+                    answers[index].style.display = "block";
+                } else {
+                    answers[index].style.display = "none";
+                }
+            }
+            
+            function regresarPagina() {
+
+            window.location.href = "index.html";
+            }
+        </script>
+    </body>
+    </html>
+    
