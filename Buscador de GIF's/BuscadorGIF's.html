@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Buscador de GIFs con Estilo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center title text-primary">🔍 Buscador de GIFs</h1>
+
+  <div class="row mb-4 justify-content-center">
+    <div class="col-md-6">
+      <div class="input-group">
+        <input type="text" class="form-control" id="searchInput" placeholder="¿Qué quieres buscar?">
+        <button class="btn btn-primary" onclick="buscarGifs(true)">Buscar</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" id="gifContainer"></div>
+
+  <nav>
+    <ul class="pagination mt-4 justify-content-center">
+      <li class="page-item"><button class="page-link" onclick="cambiarPagina('prev')">Anterior</button></li>
+      <li class="page-item disabled"><span class="page-link" id="numeroPagina">Página 1</span></li>
+      <li class="page-item"><button class="page-link" onclick="cambiarPagina('next')">Siguiente</button></li>
+    </ul>
+  </nav>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
